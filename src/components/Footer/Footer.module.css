@@ -1,0 +1,159 @@
+
+.footer{
+    display: flex;
+    margin: 30px auto;
+    margin-top: 100px;
+    max-width: 1350px;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer_child_left {
+    width: 30%;
+    align-items: center;
+    display: flex;
+}
+
+.footer_child_left img{
+    width: 40px;
+}
+
+.footer_child_left p{
+    color: #a8a8a8;
+    font-size: 19px;
+    margin: 0;
+    margin-right: 15px;
+}
+
+.footer_child_left img{
+    width: 35px;
+    margin-right: 20px;
+}
+
+/* footer_child_right */
+
+.footer_child_right{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.footer_child_right_contact a:hover svg{
+    transform: scale(1.1);
+}
+
+.footer_child_right_link{
+    margin-right: 50px;
+}
+
+.footer_child_right_link a{
+    color: #8a8a8a;
+    transition: .3s;
+    text-decoration: none;
+    font-size: 19px;
+}
+
+.footer_child_right_contact a:hover,
+.footer_child_right_link a:hover{
+    color: white;
+}
+
+.footer_child_right_link span{
+    padding: .5px;
+    background: #8a8a8a;    
+    margin: 0 20px;
+}
+
+.footer_child_right_contact a{
+    color: #8a8a8a;
+    transition: .3s;
+    margin-left: 20px;
+    font-size: 30px;
+}
+
+/* Adaptation */
+
+@media screen and (max-width: 1400px){
+    
+    .footer_child_right_link a,
+    .footer_child_left p{
+        font-size: 16px;
+    }
+    
+    .footer_child_right_contact a svg,
+    .footer_child_left img{
+        width: 25px;
+    }
+}
+
+@media screen and (max-width: 920px){
+
+    .footer_child_left {
+        width: 35%;
+    }
+}
+
+@media screen and (max-width: 850px){
+    
+    .footer_child_right_link{
+        margin-right: 20px;
+    }
+}
+
+@media screen and (max-width: 800px){
+
+    .footer{
+        justify-content: center;
+    }
+
+    .footer_child_right,
+    .footer_child_left{
+        width: 100%;
+        justify-content: center;
+    }
+
+    .footer_child_right{
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 500px){
+
+    .footer{
+        margin-top: 60px;
+        margin-bottom: 50px;
+    }
+
+    .footer_child_left p{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .footer_child_left{
+        flex-wrap: wrap;
+        margin-bottom: 15px;
+    }
+
+    .footer_child_right{
+        margin-top: 20px;
+        flex-wrap: wrap;
+    }
+
+    .footer_child_right_contact,
+    .footer_child_right_link{
+        text-align: center;
+        width: 100%;
+    }
+
+    .footer_child_right_link{
+        margin: 0px;
+        margin-bottom: 20px;
+    }
+
+    .footer_child_right_contact a{
+        margin: 0 10px;
+    }
+}

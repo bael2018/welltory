@@ -1,0 +1,38 @@
+
+.navbar{
+    margin: 0 auto;
+    max-width: 1350px;
+    margin-top: 30px;
+}
+
+.navbar_logo{
+    display: flex;
+    width: 170px;
+    align-items: center;
+    cursor: pointer;
+    justify-content: space-between;
+}
+
+/* Adaptation */
+
+@media screen and (max-width: 1400px){
+    
+    .navbar{
+        margin-top: 20px;
+    }
+
+    .navbar_logo{
+        width: 160px;
+    }
+}
+
+@media screen and (max-width: 650px){
+    
+    .navbar_logo{
+        width: 135px;
+    }
+    
+    .navbar_logo img:nth-child(2){
+        width: 90px;
+    }
+}

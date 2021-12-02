@@ -1,0 +1,39 @@
+
+.item{
+    border-bottom: 1px solid white;
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+
+.item p{
+    color: white;
+    width: 60%;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.item div{
+    width: 15%;
+    text-align: center;
+}
+
+@media screen and (max-width: 600px){
+    
+    .item p{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 530px){
+    
+    .item p{
+        width: 55%;
+    }
+    
+    .item div{
+        width: 19%;
+    }
+}
